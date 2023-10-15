@@ -1,0 +1,14 @@
+C:\Users\45513\git_repos\Srama\bin\Debug\net7.0\Srama.exe
+C:\Users\45513\git_repos\Srama\bin\Debug\net7.0\Srama.deps.json
+C:\Users\45513\git_repos\Srama\bin\Debug\net7.0\Srama.runtimeconfig.json
+C:\Users\45513\git_repos\Srama\bin\Debug\net7.0\Srama.dll
+C:\Users\45513\git_repos\Srama\bin\Debug\net7.0\Srama.pdb
+C:\Users\45513\git_repos\Srama\obj\Debug\net7.0\Srama.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\45513\git_repos\Srama\obj\Debug\net7.0\Srama.AssemblyInfoInputs.cache
+C:\Users\45513\git_repos\Srama\obj\Debug\net7.0\Srama.AssemblyInfo.cs
+C:\Users\45513\git_repos\Srama\obj\Debug\net7.0\Srama.csproj.CoreCompileInputs.cache
+C:\Users\45513\git_repos\Srama\obj\Debug\net7.0\Srama.dll
+C:\Users\45513\git_repos\Srama\obj\Debug\net7.0\refint\Srama.dll
+C:\Users\45513\git_repos\Srama\obj\Debug\net7.0\Srama.pdb
+C:\Users\45513\git_repos\Srama\obj\Debug\net7.0\Srama.genruntimeconfig.cache
+C:\Users\45513\git_repos\Srama\obj\Debug\net7.0\ref\Srama.dll
