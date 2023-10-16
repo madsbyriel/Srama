@@ -1,4 +1,5 @@
 {
     "port": 31415,
-    "hostname": "localhost"
+    "hostname": "localhost",
+    "log_directory": "logging"
 }

@@ -1,0 +1,4 @@
+# Ignore logging directory and its contents
+logging/
+bin/
+obj/
