@@ -1,13 +1,8 @@
 ﻿using Services;
 
-IProjectInfo info = new ProjectInfo();
-ILogging logging = new Logging(info);
+InterfaceProvider serviceProvider = new InterfaceProvider();
+serviceProvider.AddStaticService<IProjectInfo, ProjectInfo>();
 
-try
-{
-    throw new Exception("Testing stuff");
-}
-catch (System.Exception e)
-{
-    logging.LogException(e);
-}
+IProjectInfo projectInfo = serviceProvider.GetService<IProjectInfo>();
+
+Console.WriteLine(projectInfo);

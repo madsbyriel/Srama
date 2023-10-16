@@ -22,12 +22,10 @@ class ProjectInfo : IProjectInfo
         hostname = projectJson.hostname;
         port = projectJson.port;
         DirectoryInfo logDirectoryInfo = new DirectoryInfo(projectJson.log_directory);
-        if (logDirectoryInfo.Exists) {
-            logDirectory = logDirectoryInfo.FullName;
+        if (!logDirectoryInfo.Exists) {
+            logDirectoryInfo.Create();
         }
-        else {
-            logDirectory = "";
-        }
+        logDirectory = logDirectoryInfo.FullName;
     }
 
     public override string ToString()

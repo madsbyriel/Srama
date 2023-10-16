@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\madsh\\.nuget\\packages\\": {}
+    "C:\\Users\\45513\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\madsh\\git_repos\\Srama\\Srama.csproj",
+      "projectUniqueName": "C:\\Users\\45513\\git_repos\\Srama\\Srama.csproj",
       "projectName": "Srama",
-      "projectPath": "C:\\Users\\madsh\\git_repos\\Srama\\Srama.csproj",
-      "packagesPath": "C:\\Users\\madsh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\madsh\\git_repos\\Srama\\obj\\",
+      "projectPath": "C:\\Users\\45513\\git_repos\\Srama\\Srama.csproj",
+      "packagesPath": "C:\\Users\\45513\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\45513\\git_repos\\Srama\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\madsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\45513\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
