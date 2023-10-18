@@ -1,31 +1,27 @@
 ﻿using System.Net;
+using System.Text;
+using Classes;
 using Services;
 
 InterfaceProvider serviceProvider = new InterfaceProvider();
 serviceProvider.AddStaticService<IProjectInfo, ProjectInfo>();
 
-HttpListener httpListener = new HttpListener();
-httpListener.Prefixes.Add("http://localhost:31415/");
+Server server = new Server("localhost", 31415);
 
-httpListener.Start();
-Console.WriteLine("Server started");
+server.AddRoute("GET", "/", context => {
+    byte[] fileContents = File.ReadAllBytes("dist/main.js");
 
-var assembly = System.Reflection.Assembly.GetExecutingAssembly();
-var attributes = assembly.GetCustomAttributes(false);
-foreach (var attribute in attributes)
-{
-    Console.WriteLine(attribute.ToString());
-}
+    // Set the content type of the response
+    context.Response.ContentType = "text/plain";
 
-while (true) 
-{
-    HttpListenerContext context = httpListener.GetContext();
-    Console.WriteLine(context.Request.HttpMethod);
-    if (context.Request.Url != null) 
-    {
-        Console.WriteLine(context.Request.Url.AbsolutePath);
-    } else
-    {
-        Console.WriteLine("Twas null.");
-    }
-}
+    context.Response.StatusCode = 200;
+
+    context.Response.OutputStream.Write(fileContents, 0, fileContents.Length);
+    context.Response.OutputStream.Close();
+});
+
+server.StartServer();
+
+Task serverRunTask = server.ServerRun();
+
+await serverRunTask;
